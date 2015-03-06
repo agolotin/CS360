@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>City Finder</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+	<form>
+		Enter a Utah City: <input type="text" id="cityfield" value=""><br>
+		Suggestion: <span id="txt_hint">Empty</span><br>
+		<input id="button" type="submit" value="Submit">
+	</form>
+	<textarea id="dispcity">No City</textarea>
+	<p>Current Weather</p>
+	<div id="weather">No weather</div>
+
+	<script>
+	$("#button").click(function(e) {
+			e.preventDefault();
+			var value = $("#cityfield").val();
+			$("#dispcity").text(value);
+
+			var w_url = "https://api.wunderground.com/api/b1f3187a65959a43/conditions/q/UT/";
+			w_url += value + ".json";
+			console.log("URL requested: " + w_url);
+
+			$.ajax({
+					url : w_url,
+					datatype : "jsonp",
+					success : function(parsed_json) {
+						var loc = parsed_json['current_observation']['display_location']['city'];
+						var temp_string = parsed_json['current_observation']['temperature_string'];
+						var current_weather = parsed_json['current_observation']['weather'];
+						_weather = "<ul>";
+						_weather += "<li>Location: " + loc;
+						_weather += "<li>Temperature: " + temp_string;
+						_weather += "<li>Weather: " + current_weather;
+						_weather += "<ul>";
+
+						$("#weather").html(_weather);
+					}
+			});
+		});
+
+	$("#cityfield").keyup(function() {
+			var url = "http://52.11.170.15/getcity?q=";
+			url += $("#cityfield").val();
+
+			$.getJSON(url, function(data) {
+				var everything = "<ul>";
+				$.each(data, function(i,item) {
+						everything += "<li> " + data[i].city + " </li>";
+				});
+
+				everything += "</ul>";
+				$("#txt_hint").html(everything);
+			})
+			.fail(function(jqXHR, textStatus, errorThrown) {
+				console.log("getJSON request failed"); 
+				console.log("Incoming: "  + jqXHR.responseText);
+				$("#txt_hint").text("Empty");
+			})
+			.done(function() { console.log("getJSON request succeeded"); });
+		});
+	</script>
+
+</body>
+</html>
