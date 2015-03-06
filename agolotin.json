@@ -1,9 +1,10 @@
 {
-	"name" : "lab6_nodejs",
+	"author" : "Artem Golotin",
+	"name" : "lab6_agolotin",
 	"version" : "0.1.0",
+	"description" : "Lab#6 Node.js submission for Artem Golotin",
 	"repository" : {
 		"type" : "git",
-		"location" : "http://github.com/agolotin/CS360-nodejs"
+		"url" : "http://github.com/agolotin/CS360-nodejs"
 	}
-	"description" : "Lab#6 Node.js submission for Artem Golotin",
 }
