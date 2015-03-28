@@ -1,1 +1,12 @@
 nohup: ignoring input
+Fri, 20 Mar 2015 05:35:37 GMT body-parser deprecated bodyParser: use individual json/urlencoded middlewares at https_server.js:9:9
+Fri, 20 Mar 2015 05:35:37 GMT body-parser deprecated undefined extended: provide extended option at node_modules/body-parser/index.js:85:29
+In GET comment route
+[Error: /usr/local/lib/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+In GET getcity route
+In GET getcity route
+In POST comment route
+{ Name: 'Mickeyasdfasdf', Comment: 'Helloasdfsdaf' }
+Record successfully added as 5514626aee9f55ee55a90738
+In GET comment route
