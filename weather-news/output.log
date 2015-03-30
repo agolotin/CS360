@@ -1,0 +1,5 @@
+
+> weather-news@0.0.0 start /var/CS360/weather-news
+> node ./bin/www
+
+[0mPOST /posts [32m200 [0m27.744 ms - 84[0m
