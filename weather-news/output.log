@@ -1,5 +1,35 @@
+nohup: ignoring input
 
 > weather-news@0.0.0 start /var/CS360/weather-news
 > node ./bin/www
 
-[0mPOST /posts [32m200 [0m27.744 ms - 84[0m
+[0mHEAD / [32m200 [0m11.556 ms - 1857[0m
+[0mGET /phpinfo.php [33m404 [0m4.541 ms - 967[0m
+[0mGET / [32m200 [0m1.270 ms - 1857[0m
+[0mGET /javascripts/angularApp.js [32m200 [0m3.343 ms - 2791[0m
+[0mGET /posts [32m200 [0m11.064 ms - 117[0m
+[0mGET /favicon.ico [33m404 [0m1.399 ms - 967[0m
+[0mPOST /posts [32m200 [0m79.531 ms - 82[0m
+[0mPUT /posts/551aee1e8354aac02486b81a/upvote [32m200 [0m6.427 ms - 82[0m
+[0mPUT /posts/551aee1e8354aac02486b81a/upvote [32m200 [0m3.048 ms - 82[0m
+[0mPUT /posts/551aee1e8354aac02486b81a/upvote [32m200 [0m2.429 ms - 82[0m
+[0mGET /posts/551aee1e8354aac02486b81a [32m200 [0m3.647 ms - 82[0m
+[0mPOST /posts/551aee1e8354aac02486b81a/comments [32m200 [0m76.018 ms - 191[0m
+[0mPOST /posts/551aee1e8354aac02486b81a/comments [32m200 [0m75.483 ms - 223[0m
+[0mPUT /posts/551aee1e8354aac02486b81a/comments/551aee278354aac02486b81c/upvote [32m200 [0m7.640 ms - 114[0m
+[0mPUT /posts/551aee1e8354aac02486b81a/comments/551aee248354aac02486b81b/upvote [32m200 [0m3.264 ms - 109[0m
+[0mPUT /posts/551aee1e8354aac02486b81a/comments/551aee278354aac02486b81c/upvote [32m200 [0m4.488 ms - 114[0m
+[0mPUT /posts/551aee1e8354aac02486b81a/comments/551aee278354aac02486b81c/upvote [32m200 [0m3.632 ms - 114[0m
+[0mPUT /posts/551aee1e8354aac02486b81a/comments/551aee278354aac02486b81c/upvote [32m200 [0m3.646 ms - 114[0m
+[0mPUT /posts/551aee1e8354aac02486b81a/comments/551aee278354aac02486b81c/upvote [32m200 [0m4.966 ms - 114[0m
+[0mGET / [36m304 [0m1.593 ms - -[0m
+[0mGET /javascripts/angularApp.js [36m304 [0m1.301 ms - -[0m
+[0mGET /posts [32m200 [0m2.261 ms - 253[0m
+[0mGET / [36m304 [0m0.990 ms - -[0m
+[0mGET /javascripts/angularApp.js [36m304 [0m0.686 ms - -[0m
+[0mGET /posts [36m304 [0m2.246 ms - -[0m
+[0mGET /posts/551aee1e8354aac02486b81a [32m200 [0m4.574 ms - 306[0m
+[0mGET / [32m200 [0m4.138 ms - 1857[0m
+[0mGET /javascripts/angularApp.js [32m200 [0m13.890 ms - 2791[0m
+[0mGET /posts [32m200 [0m2.266 ms - 253[0m
+[0mGET /favicon.ico [33m404 [0m1.829 ms - 967[0m
