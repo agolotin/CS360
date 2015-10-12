@@ -1,0 +1,23 @@
+httperf --client=0/1 --server=ebola.cs.byu.edu --port=4085 --uri=/CHR_Un/musca_domestica_10mb.txt --send-buffer=4096 --recv-buffer=16384 --num-conns=10 --num-calls=10
+Maximum connect burst length: 1
+
+Total: connections 10 requests 100 replies 100 test-duration 39.892 s
+
+Connection rate: 0.3 conn/s (3989.2 ms/conn, <=1 concurrent connections)
+Connection time [ms]: min 3091.3 avg 3989.2 max 5688.3 median 3544.5 stddev 947.8
+Connection time [ms]: connect 0.6
+Connection length [replies/conn]: 10.000
+
+Request rate: 2.5 req/s (398.9 ms/req)
+Request size [B]: 100.0
+
+Reply rate [replies/s]: min 1.8 avg 2.6 max 3.2 stddev 0.6 (7 samples)
+Reply time [ms]: response 2.8 transfer 396.0
+Reply size [B]: header 247.0 content 10925398.0 footer 0.0 (total 10925645.0)
+Reply status: 1xx=0 2xx=100 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 3.93 system 35.54 (user 9.8% system 89.1% total 98.9%)
+Net I/O: 26746.3 KB/s (219.1*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0

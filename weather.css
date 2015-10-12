@@ -1,0 +1,168 @@
+#banner
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:1900px;
+	height:1090px;
+	background-size: cover;
+	background-image: url("weather_info/rain-animated-3.gif");
+}
+
+#banner h1
+{
+	font-family: "Palatino Linotype";
+	position:absolute;
+	left:50px;
+	font-size:48px;
+}
+
+#h2
+{
+	font-family: Furuta, Tahoma;
+	position:absolute;
+	top:90px;
+	left:140px;
+	font-size:18px;
+}
+
+#form
+{
+	position:absolute;
+	color:black;
+	top:260px;
+	left:15px;
+	font-size:16px;
+}
+
+#content
+{
+	position:absolute;
+	top:400px;
+}
+
+/* nav pane */
+
+#nav_menu
+{
+	font-family: Futura, Tahoma, sans-serif;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 650px;
+	height: 56px;
+	font-size: 14px;
+	color: black;
+	margin: 0 auto;
+}
+
+#nav_menu ul
+{
+	list-style-type: none;
+}
+
+#nav_menu ul li
+{
+	float: left;
+	position: relative;
+}
+
+#nav_menu ul li a
+{
+	text-align: center;
+	border-right:1px solid #e9e9e9;
+	border-left:1px solid #e9e9e9;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+	color:black;
+	font-weight: bold;
+}
+
+#nav_menu ul li:hover a
+{
+	background:#0000ff;
+}
+
+#nav_menu ul li ul
+{
+	display: none;
+}
+
+#nav_menu ul li:hover ul
+{
+	display: block;
+	position: absolute;
+}
+
+
+#nav_menu ul li:hover ul li a
+{
+	display: block;
+	background: #12aeef;
+	color: #ffffff;
+	width: 100px;
+	text-align: center;
+	border-bottom: 1px solid #f2f2f2;
+	border-right: none;
+}
+
+#nav_menu ul li:hover ul li a:hover
+{
+	background:#6dc7ec;
+	color:#fff;
+}
+
+#contact_info
+{
+	color:white;
+	position:absolute;
+	top:200px;
+	left:50px;
+	padding:24px;
+}
+
+#image
+{
+	color:white;
+	position:absolute;
+	top:40px;
+	left:830px;
+	box-shadow: rgba(0,0,0,0.2) 10px 10px;
+}
+
+table, th, td
+{
+	background-color:grey;
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+th, td 
+{
+	padding:5px;
+	text-align:left;
+	font-size:18px;
+}
+
+th
+{
+	height:50px;
+}
+
+#resume
+{
+	color:indigo;
+	position:absolute;
+	top:200px;
+	left:100px;
+}
+
+pre 
+{
+	font-size:15px;
+	display: block;
+	font-family: monospace;
+	white-space: pre;
+	margin: 1em 0;
+}
